@@ -222,86 +222,161 @@ const content = {
 };
 
 /* ===================== Projects ===================== */
+/* Полностью замени свой const projects = [...] на этот */
+
 const projects = [
     {
-        slug: "onlinelearning",
-        title: "OnlineLearning",
-        text_en: "Online education platform with users, courses and role-based access.",
-        text_ru: "Платформа онлайн-обучения: пользователи, курсы, роли и права.",
-        tags: ["Django", "DRF", "PostgreSQL"],
-        repo: "OnlineLearning",
+        slug: "mediscanclinic",
+        title: "MediscanClinic",
+        text_en:
+            "Production-ready medical platform with appointments, reminders, Telegram/email notifications and admin workflows.",
+        text_ru:
+            "Production-ready медицинская платформа: запись на приём, напоминания, Telegram/email уведомления и admin-процессы.",
+        tags: ["Django", "Celery", "Redis", "PostgreSQL", "Docker"],
+        repo: "MediscanClinic",
     },
+
     {
-        slug: "message-autosend",
-        title: "Message_AutoSend",
-        text_en: "Email campaign management system with scheduling, reporting and logging.",
-        text_ru: "Система email-рассылок: расписание, отчёты, логирование.",
-        tags: ["Django", "Redis", "Scheduler"],
-        repo: "Message_AutoSend",
+        slug: "avito",
+        title: "Avito Marketplace Platform",
+        text_en:
+            "Marketplace platform with Spring Boot backend and React frontend. Auth, ads, comments, image uploads and REST API.",
+        text_ru:
+            "Маркетплейс платформа на Spring Boot + React. Авторизация, объявления, комментарии, загрузка изображений и REST API.",
+        tags: ["Java", "Spring Boot", "React", "PostgreSQL"],
+        repo: "avito",
     },
+
     {
-        slug: "atomichabits",
-        title: "AtomicHabits API",
-        text_en: "Habit tracking backend with background tasks and notifications.",
-        text_ru: "Трекер привычек: фоновые задачи и уведомления.",
-        tags: ["Celery", "Redis", "API"],
-        repo: "AtomicHabits",
+        slug: "concurrent-web-scraper",
+        title: "ConcurrentWebScraper",
+        text_en:
+            "Concurrent scraping platform with worker pool, queue processing, job statuses and scalable architecture.",
+        text_ru:
+            "Платформа параллельного парсинга: worker pool, очередь задач, статусы jobs и масштабируемая архитектура.",
+        tags: ["Go", "Workers", "Concurrency", "Redis"],
+        repo: "ConcurrentWebScraper",
     },
+
     {
-        slug: "onlinestore",
-        title: "OnlineStore",
-        text_en: "E-commerce backend with products, categories, validation, orders and REST API.",
-        text_ru: "Backend интернет-магазина: товары, категории, валидация, заказы и REST API.",
-        tags: ["Django", "DRF", "PostgreSQL", "Docker"],
-        repo: "OnlineStore",
+        slug: "api-gateway",
+        title: "ApiGateway",
+        text_en:
+            "High-performance API Gateway / Reverse Proxy with middleware chain, routing, logging and metrics.",
+        text_ru:
+            "Высокопроизводительный API Gateway / Reverse Proxy с middleware chain, маршрутизацией, логированием и метриками.",
+        tags: ["Go", "net/http", "Proxy", "Middleware"],
+        repo: "ApiGateway",
     },
+
     {
-        slug: "mybank",
-        title: "MyBank",
-        text_en: "Financial transactions processing module (imports, conversion, reports).",
-        text_ru: "Модуль обработки транзакций (импорт, конвертация, отчёты).",
-        tags: ["Python", "Pandas", "Finance"],
-        repo: "MyBank",
+        slug: "devops-cli",
+        title: "DevOpsCLI",
+        text_en:
+            "CLI deployment tool for config validation, Docker Compose control, SSH deploy and environment automation.",
+        text_ru:
+            "CLI DevOps-инструмент: валидация конфигов, управление Docker Compose, SSH deploy и автоматизация окружений.",
+        tags: ["Go", "CLI", "Docker", "SSH"],
+        repo: "DevOpsCLI",
     },
+
     {
-        slug: "projectbank",
-        title: "ProjectBank",
-        text_en: "Bank operations analytics tool with aggregation and reporting.",
-        text_ru: "Аналитика банковских операций: агрегации и отчёты.",
-        tags: ["Python", "Pandas", "Analytics"],
-        repo: "ProjectBank",
+        slug: "myplanner-tree",
+        title: "MyPlannerTree",
+        text_en:
+            "Visual task planner with tree structure, drag & drop, node management and productivity workflows.",
+        text_ru:
+            "Визуальный планировщик задач с древовидной структурой, drag & drop, управлением узлами и productivity workflow.",
+        tags: ["React", "TypeScript", "Planner", "UI"],
+        repo: "MyPlannerTree",
     },
+
     {
-        slug: "hh-data",
-        title: "HH_Data",
-        text_en: "Job market data collection (hh.ru) with database storage.",
-        text_ru: "Сбор данных рынка вакансий (hh.ru) с хранением в БД.",
-        tags: ["Parsing", "PostgreSQL", "ETL"],
-        repo: "HH_Data",
+        slug: "mylandingreact",
+        title: "MyLandingReact",
+        text_en:
+            "Modern portfolio landing page built with React, animations, responsive UI and GitHub Pages deployment.",
+        text_ru:
+            "Современный portfolio landing page на React: анимации, responsive UI и деплой на GitHub Pages.",
+        tags: ["React", "Vite", "Landing", "Frontend"],
+        repo: "MyLandingReact",
     },
-    {
-        slug: "hh-vacancies",
-        title: "HH_Vacancies",
-        text_en: "Vacancy analytics and processing based on hh.ru data.",
-        text_ru: "Аналитика и обработка вакансий на данных hh.ru.",
-        tags: ["Pandas", "Analytics", "Jobs"],
-        repo: "HH_Vacancies",
-    },
-    {
-        slug: "ecommerceproject",
-        title: "ECommerceProject",
-        text_en: "Django-based e-commerce backend with products, categories and validation.",
-        text_ru: "Backend интернет-магазина на Django: товары, категории, валидация.",
-        tags: ["Django", "PostgreSQL", "Admin"],
-        repo: "ECommerceProject",
-    },
+
     {
         slug: "vatranscribe",
         title: "VATranscribe",
-        text_en: "Audio/video transcription platform with background jobs, progress tracking and desktop/web delivery.",
-        text_ru: "Платформа транскрибации аудио/видео с очередями задач, отслеживанием прогресса и web/desktop версией.",
+        text_en:
+            "Audio/video transcription platform with queue jobs, progress dashboard and desktop/web architecture.",
+        text_ru:
+            "Платформа транскрибации аудио/видео с очередями задач, dashboard прогресса и web/desktop архитектурой.",
         tags: ["FastAPI", "React", "TypeScript", "Tauri", "Redis"],
         repo: "VATranscribe",
+    },
+
+    {
+        slug: "onlinelearning",
+        title: "OnlineLearning",
+        text_en:
+            "Online education platform with users, courses, lessons and role-based access.",
+        text_ru:
+            "Платформа онлайн-обучения: пользователи, курсы, уроки и роли доступа.",
+        tags: ["Django", "DRF", "PostgreSQL"],
+        repo: "OnlineLearning",
+    },
+
+    {
+        slug: "atomichabits",
+        title: "AtomicHabits API",
+        text_en:
+            "Habit tracking backend with notifications, scheduled jobs and API architecture.",
+        text_ru:
+            "Backend трекера привычек: уведомления, фоновые задачи и API архитектура.",
+        tags: ["Django", "Celery", "Redis"],
+        repo: "AtomicHabits",
+    },
+
+    {
+        slug: "message-autosend",
+        title: "Message_AutoSend",
+        text_en:
+            "Email campaign management system with scheduling, reporting and delivery logs.",
+        text_ru:
+            "Система email-рассылок: расписание, отчёты и логирование отправок.",
+        tags: ["Django", "Redis", "Scheduler"],
+        repo: "Message_AutoSend",
+    },
+
+    {
+        slug: "onlinestore",
+        title: "OnlineStore",
+        text_en:
+            "E-commerce backend with products, categories, validation and REST API.",
+        text_ru:
+            "Backend интернет-магазина: товары, категории, валидация и REST API.",
+        tags: ["Django", "DRF", "PostgreSQL"],
+        repo: "OnlineStore",
+    },
+
+    {
+        slug: "mybank",
+        title: "MyBank",
+        text_en:
+            "Financial transactions processing module with imports, currency conversion and reporting.",
+        text_ru:
+            "Модуль обработки финансовых транзакций: импорт, конвертация валют и отчёты.",
+        tags: ["Python", "Pandas", "Finance"],
+        repo: "MyBank",
+    },
+
+    {
+        slug: "hh-data",
+        title: "HH_Data",
+        text_en:
+            "Job market data collection platform based on hh.ru with storage and analytics.",
+        text_ru:
+            "Система сбора данных рынка вакансий hh.ru с хранением и аналитикой.",
+        tags: ["Python", "PostgreSQL", "ETL"],
+        repo: "HH_Data",
     },
 ];
 
