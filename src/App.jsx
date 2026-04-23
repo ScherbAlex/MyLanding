@@ -14,7 +14,7 @@ const content = {
             badge: "Full-Stack Developer",
             title: "Alex Shcherbyna",
             subtitle:
-                "Full-stack developer focused on backend systems, business logic, data processing, and modern frontend interfaces. Building clean, testable, production-ready applications.",
+                "Full-stack developer focused on backend systems, business logic, data processing, microservices, desktop/web apps, and modern frontend interfaces. Building clean, testable, production-ready applications.",
             ctas: { github: "View GitHub", projects: "See projects" },
         },
         sections: {
@@ -23,19 +23,91 @@ const content = {
                 cards: [
                     {
                         title: "Backend (Python)",
-                        items: ["Django, Django REST Framework", "Celery, Redis", "REST API, JWT / Token auth", "Business & financial logic"],
+                        items: [
+                            "Django, Django REST Framework",
+                            "FastAPI, Pydantic",
+                            "Celery / RQ / Dramatiq, Redis",
+                            "SQLAlchemy / SQLModel",
+                            "REST API, JWT / Token auth",
+                            "Business & financial logic",
+                        ],
                     },
-                    { title: "Backend (Java)", items: ["Java Core", "Spring Boot", "REST APIs", "Layered architecture"] },
-                    { title: "Frontend", items: ["React", "HTML5, CSS3", "Responsive layout", "UI frameworks & components"] },
+                    {
+                        title: "Backend (Go)",
+                        items: [
+                            "net/http, httputil",
+                            "golang.org/x/time/rate",
+                            "zap / logrus",
+                            "goquery, redis",
+                            "sync, context",
+                            "cobra, viper, os/exec, ssh",
+                        ],
+                    },
+                    {
+                        title: "Backend (Java)",
+                        items: [
+                            "Spring Boot, Spring Web",
+                            "Spring Data JPA",
+                            "Spring Security",
+                            "PostgreSQL, Flyway",
+                            "MapStruct",
+                            "JUnit 5, MockMvc, Testcontainers",
+                        ],
+                    },
+                    {
+                        title: "Frontend",
+                        items: [
+                            "React + Vite",
+                            "TypeScript",
+                            "TanStack Query",
+                            "Zustand / Redux Toolkit",
+                            "Tailwind CSS, shadcn/ui, Mantine",
+                            "Drag & drop upload, dashboards",
+                        ],
+                    },
                 ],
             },
             dataDevops: {
                 cards: [
-                    { title: "Data & Analytics", items: ["Pandas, ETL pipelines", "CSV / JSON / XLSX", "Aggregation & reports", "Job market & finance analytics"] },
-                    { title: "DevOps & Quality", items: ["Docker & Docker Compose", "GitHub Actions (CI/CD)", "Environment variables (.env)", "Unit tests, clean architecture"] },
+                    {
+                        title: "Transcription / Desktop",
+                        items: [
+                            "Tauri + React",
+                            "FastAPI backend",
+                            "SQLite for desktop / MVP",
+                            "PostgreSQL for web / production",
+                            "Progress bars, jobs dashboard",
+                            "LocalStorage, drag & drop UX",
+                        ],
+                    },
+                    {
+                        title: "Microservices",
+                        items: [
+                            "Java Spring Boot / Go / Node.js",
+                            "PostgreSQL, Redis",
+                            "RabbitMQ / Kafka",
+                            "Docker Compose",
+                            "WebSocket / SSE",
+                            "OpenTelemetry, Prometheus, Grafana",
+                        ],
+                    },
+                    {
+                        title: "DevOps & Quality",
+                        items: [
+                            "Docker & Docker Compose",
+                            "GitHub Actions (CI/CD)",
+                            "Environment variables (.env)",
+                            "Unit tests, integration tests",
+                            "Clean architecture",
+                            "Production-ready workflows",
+                        ],
+                    },
                 ],
             },
-            projects: { title: "Selected Projects", note: "Projects are based on my real GitHub showcase repositories." },
+            projects: {
+                title: "Selected Projects",
+                note: "Projects are based on my real GitHub showcase repositories.",
+            },
             contact: { title: "Contact" },
         },
         footer: { madeWith: "Built with React + Framer Motion" },
@@ -48,7 +120,7 @@ const content = {
             badge: "Full-stack разработчик",
             title: "Alex Shcherbyna",
             subtitle:
-                "Full-stack разработчик: backend-сервисы, бизнес-логика, обработка данных и современный фронтенд. Делаю чистые, тестируемые и production-готовые приложения.",
+                "Full-stack разработчик: backend-сервисы, бизнес-логика, обработка данных, микросервисы, desktop/web приложения и современный фронтенд. Делаю чистые, тестируемые и production-готовые приложения.",
             ctas: { github: "Открыть GitHub", projects: "К проектам" },
         },
         sections: {
@@ -57,19 +129,91 @@ const content = {
                 cards: [
                     {
                         title: "Backend (Python)",
-                        items: ["Django, Django REST Framework", "Celery, Redis", "REST API, JWT / Token auth", "Финансовая и бизнес-логика"],
+                        items: [
+                            "Django, Django REST Framework",
+                            "FastAPI, Pydantic",
+                            "Celery / RQ / Dramatiq, Redis",
+                            "SQLAlchemy / SQLModel",
+                            "REST API, JWT / Token auth",
+                            "Финансовая и бизнес-логика",
+                        ],
                     },
-                    { title: "Backend (Java)", items: ["Java Core", "Spring Boot", "REST API", "Слоистая архитектура"] },
-                    { title: "Frontend", items: ["React", "HTML5, CSS3", "Адаптивная верстка", "UI-фреймворки и компоненты"] },
+                    {
+                        title: "Backend (Go)",
+                        items: [
+                            "net/http, httputil",
+                            "golang.org/x/time/rate",
+                            "zap / logrus",
+                            "goquery, redis",
+                            "sync, context",
+                            "cobra, viper, os/exec, ssh",
+                        ],
+                    },
+                    {
+                        title: "Backend (Java)",
+                        items: [
+                            "Spring Boot, Spring Web",
+                            "Spring Data JPA",
+                            "Spring Security",
+                            "PostgreSQL, Flyway",
+                            "MapStruct",
+                            "JUnit 5, MockMvc, Testcontainers",
+                        ],
+                    },
+                    {
+                        title: "Frontend",
+                        items: [
+                            "React + Vite",
+                            "TypeScript",
+                            "TanStack Query",
+                            "Zustand / Redux Toolkit",
+                            "Tailwind CSS, shadcn/ui, Mantine",
+                            "Drag & drop upload, dashboards",
+                        ],
+                    },
                 ],
             },
             dataDevops: {
                 cards: [
-                    { title: "Данные и аналитика", items: ["Pandas, ETL", "CSV / JSON / XLSX", "Агрегации и отчёты", "Аналитика рынка вакансий и финансов"] },
-                    { title: "DevOps и качество", items: ["Docker / Docker Compose", "GitHub Actions (CI/CD)", ".env и конфиги окружений", "Unit-тесты, чистая архитектура"] },
+                    {
+                        title: "Транскрибация / Desktop",
+                        items: [
+                            "Tauri + React",
+                            "FastAPI backend",
+                            "SQLite для desktop / MVP",
+                            "PostgreSQL для web / production",
+                            "Progress bars, jobs dashboard",
+                            "LocalStorage, drag & drop UX",
+                        ],
+                    },
+                    {
+                        title: "Микросервисы",
+                        items: [
+                            "Java Spring Boot / Go / Node.js",
+                            "PostgreSQL, Redis",
+                            "RabbitMQ / Kafka",
+                            "Docker Compose",
+                            "WebSocket / SSE",
+                            "OpenTelemetry, Prometheus, Grafana",
+                        ],
+                    },
+                    {
+                        title: "DevOps и качество",
+                        items: [
+                            "Docker / Docker Compose",
+                            "GitHub Actions (CI/CD)",
+                            ".env и конфиги окружений",
+                            "Unit и integration tests",
+                            "Чистая архитектура",
+                            "Production-ready workflows",
+                        ],
+                    },
                 ],
             },
-            projects: { title: "Избранные проекты", note: "Проекты основаны на моих реальных showcase-репозиториях на GitHub." },
+            projects: {
+                title: "Избранные проекты",
+                note: "Проекты основаны на моих реальных showcase-репозиториях на GitHub.",
+            },
             contact: { title: "Контакты" },
         },
         footer: { madeWith: "Сделано на React + Framer Motion" },
@@ -103,8 +247,6 @@ const projects = [
         tags: ["Celery", "Redis", "API"],
         repo: "AtomicHabits",
     },
-
-    // ✅ ADDED: OnlineStore
     {
         slug: "onlinestore",
         title: "OnlineStore",
@@ -113,7 +255,6 @@ const projects = [
         tags: ["Django", "DRF", "PostgreSQL", "Docker"],
         repo: "OnlineStore",
     },
-
     {
         slug: "mybank",
         title: "MyBank",
@@ -144,7 +285,7 @@ const projects = [
         text_en: "Vacancy analytics and processing based on hh.ru data.",
         text_ru: "Аналитика и обработка вакансий на данных hh.ru.",
         tags: ["Pandas", "Analytics", "Jobs"],
-        repo: "HH_Vacanties", // проверь точное имя репо
+        repo: "HH_Vacancies",
     },
     {
         slug: "ecommerceproject",
@@ -153,6 +294,14 @@ const projects = [
         text_ru: "Backend интернет-магазина на Django: товары, категории, валидация.",
         tags: ["Django", "PostgreSQL", "Admin"],
         repo: "ECommerceProject",
+    },
+    {
+        slug: "vatranscribe",
+        title: "VATranscribe",
+        text_en: "Audio/video transcription platform with background jobs, progress tracking and desktop/web delivery.",
+        text_ru: "Платформа транскрибации аудио/видео с очередями задач, отслеживанием прогресса и web/desktop версией.",
+        tags: ["FastAPI", "React", "TypeScript", "Tauri", "Redis"],
+        repo: "VATranscribe",
     },
 ];
 
@@ -164,7 +313,12 @@ function Pill({ children }) {
 function IconLink({ href, icon: Icon, label, value }) {
     const isMail = href.startsWith("mailto:");
     return (
-        <a className="iconLink" href={href} target={isMail ? "_self" : "_blank"} rel={isMail ? undefined : "noreferrer"}>
+        <a
+            className="iconLink"
+            href={href}
+            target={isMail ? "_self" : "_blank"}
+            rel={isMail ? undefined : "noreferrer"}
+        >
       <span className="iconWrap">
         <Icon size={18} />
       </span>
@@ -231,10 +385,16 @@ function Landing({ lang, setLang }) {
                     </nav>
 
                     <div className="langSwitch">
-                        <button className={lang === "ru" ? "active" : ""} onClick={() => setLang("ru")}>
+                        <button
+                            className={lang === "ru" ? "active" : ""}
+                            onClick={() => setLang("ru")}
+                        >
                             RU
                         </button>
-                        <button className={lang === "en" ? "active" : ""} onClick={() => setLang("en")}>
+                        <button
+                            className={lang === "en" ? "active" : ""}
+                            onClick={() => setLang("en")}
+                        >
                             EN
                         </button>
                     </div>
@@ -244,7 +404,12 @@ function Landing({ lang, setLang }) {
             <main className="container">
                 {/* Hero */}
                 <section className="hero">
-                    <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="heroInner">
+                    <motion.div
+                        initial={{ opacity: 0, y: 14 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7 }}
+                        className="heroInner"
+                    >
                         <div className="badge">{t.hero.badge}</div>
 
                         <h1 className="h1">
@@ -265,12 +430,15 @@ function Landing({ lang, setLang }) {
 
                         <div className="miniPills">
                             <Pill>Python</Pill>
-                            <Pill>Django / DRF</Pill>
+                            <Pill>Django / FastAPI</Pill>
+                            <Pill>Go</Pill>
                             <Pill>Java / Spring Boot</Pill>
-                            <Pill>React</Pill>
+                            <Pill>React + TypeScript</Pill>
                             <Pill>PostgreSQL</Pill>
+                            <Pill>Redis</Pill>
                             <Pill>Docker</Pill>
                             <Pill>CI/CD</Pill>
+                            <Pill>Microservices</Pill>
                         </div>
                     </motion.div>
                 </section>
@@ -279,7 +447,9 @@ function Landing({ lang, setLang }) {
                 <section id="stack" className="section">
                     <div className="sectionHeader">
                         <h2 className="h2">{t.sections.stack.title}</h2>
-                        <p className="muted">Backend • Java • React • Data • DevOps</p>
+                        <p className="muted">
+                            Python • Go • Java • React • Transcription • Microservices • DevOps
+                        </p>
                     </div>
 
                     <div className="grid3">
@@ -289,9 +459,9 @@ function Landing({ lang, setLang }) {
                     </div>
                 </section>
 
-                {/* Data & DevOps */}
+                {/* Extra stack */}
                 <section className="section">
-                    <div className="grid2">
+                    <div className="grid3">
                         {t.sections.dataDevops.cards.map((c, idx) => (
                             <GlassCard key={c.title} title={c.title} items={c.items} delay={idx * 0.08} />
                         ))}
@@ -362,9 +532,24 @@ function Landing({ lang, setLang }) {
                     <div className="grid2">
                         <GlassCard delay={0.05} title={lang === "ru" ? "Связаться" : "Get in touch"}>
                             <div className="contactLinks">
-                                <IconLink href={GITHUB} icon={Github} label="GitHub" value="github.com/ScherbAlex" />
-                                <IconLink href="https://t.me/Alex_181173" icon={Send} label="Telegram" value="@Alex_181173" />
-                                <IconLink href="mailto:alexshcherbyna1173@gmail.com" icon={Mail} label="Email" value="alexshcherbyna1173@gmail.com" />
+                                <IconLink
+                                    href={GITHUB}
+                                    icon={Github}
+                                    label="GitHub"
+                                    value="github.com/ScherbAlex"
+                                />
+                                <IconLink
+                                    href="https://t.me/Alex_181173"
+                                    icon={Send}
+                                    label="Telegram"
+                                    value="@Alex_181173"
+                                />
+                                <IconLink
+                                    href="mailto:alexshcherbyna1173@gmail.com"
+                                    icon={Mail}
+                                    label="Email"
+                                    value="alexshcherbyna1173@gmail.com"
+                                />
                             </div>
                         </GlassCard>
 
@@ -373,7 +558,12 @@ function Landing({ lang, setLang }) {
                                 <a className="link" href={GITHUB} target="_blank" rel="noreferrer">
                                     GitHub Showcase → github.com/ScherbAlex
                                 </a>
-                                <a className="link" href={`${GITHUB}?tab=repositories`} target="_blank" rel="noreferrer">
+                                <a
+                                    className="link"
+                                    href={`${GITHUB}?tab=repositories`}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     Repositories →
                                 </a>
                             </div>
